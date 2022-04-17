@@ -5,7 +5,17 @@ console.log(3);
 let student = {id:1, name:"Ahmet"}
 console.log(student)
 
-function save() {
-    console.log("Saved.!")
+function save(puan=10, ogrenci) {
+    console.log(ogrenci.name+":"+puan)
 }
-save();
+save(undefined, student);
+
+let students= ["Ahmet","Engin","Levs"]
+
+console.log(students)
+
+let students2 = [student, {id:2, name:"Ahmet"}, "İstanbul", {city:"LA"}]
+
+console.log(students2)
+
+
